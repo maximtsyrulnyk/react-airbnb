@@ -3,7 +3,7 @@ import "./index.css";
 import Box from "../box";
 import ListItem from "../list-item";
 
-import test from "./test.svg";
+// import test from "./test.svg";
 
 export default function Price({
     price,
@@ -38,7 +38,7 @@ export default function Price({
 function List({currency, cleaning = 0, service = 0, checkin, checkout}) {
     return (
         <ul className="price__list">
-            <ListItem title="Hello world">
+            <ListItem>
                 <span>Плата за прибирання:</span>
                 <span>
                     {currency}
