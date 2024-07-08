@@ -1,7 +1,10 @@
+import React from "react";
+
 import Page from "./component/page";
 import Header from "./component/header";
 import Title from "./component/title";
 import Photo from "./component/photo";
+import Price from "./component/price";
 
 function App() {
   const data = {
@@ -168,6 +171,7 @@ function App() {
           cleaning={data.price.cleaning_fee}
           service={data.price.service_fee}
           checkin={data.availability.checkin_date}
+          checkout={data.availability.checkout_date}
         />
     </Page>
   );
