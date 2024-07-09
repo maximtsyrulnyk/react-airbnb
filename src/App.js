@@ -177,10 +177,11 @@ function App() {
         />
         <RoomList list={data.roomTypes} />
         <Description title="Опис"> {data.description} </Description> 
+        <PropertyDetails details={data.property_details}/>
+
         <Description title="Про сусідів" children={data.neighborhood_info} />
 
-        <PropertyDetails details={data.property_details}/>
-        
+
     </Page>
   );
 }
