@@ -7,6 +7,7 @@ import Price from "./component/price";
 import RoomList from "./component/room-list";
 import Description from "./component/description";
 import { Details } from "./component/details";
+import { Amenities } from "./component/amenities";
 function App() {
   const data = {
     listing_name: "Іст-Сайд Біл",
@@ -180,7 +181,7 @@ function App() {
 
         <Description title="Про сусідів" children={data.neighborhood_info} />
 
-
+        <Amenities amenities={data.amenities}/>
     </Page>
   );
 }
