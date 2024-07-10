@@ -8,6 +8,7 @@ import RoomList from "./component/room-list";
 import Description from "./component/description";
 import { Details } from "./component/details";
 import { Amenities } from "./component/amenities";
+import { ContactInfo } from "./component/profile";
 function App() {
   const data = {
     listing_name: "Іст-Сайд Біл",
@@ -84,7 +85,7 @@ function App() {
       hasChildFriendly: true,
     },
 
-    contact_info: {
+    profile: {
       name: "Kerthy",
       image: "https://picsum.photos/80/80",
       response_rate: 100,
@@ -182,6 +183,8 @@ function App() {
         <Description title="Про сусідів" children={data.neighborhood_info} />
 
         <Amenities amenities={data.amenities}/>
+
+        <Profile  title="Господар – Kerthy" profile = {data.profile} />
     </Page>
   );
 }
