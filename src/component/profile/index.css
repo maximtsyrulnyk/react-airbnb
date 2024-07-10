@@ -1,71 +1,103 @@
 .profile {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .profile-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 20px;
-  }
-  
-  .profile-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .profile-info {
-    flex: 1;
-  }
-  
-  .profile-name {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .profile-description {
-    line-height: 1.5;
-    margin-bottom: 10px;
-  }
-  
-  .contact-details {
-    margin-bottom: 10px;
-  }
-  
-  .phone-number {
-    font-weight: bold;
-    color: #007bff;
-  }
-  
-  .response-time {
-    font-size: 14px;
-    color: #6c757d;
-  }
-  
-  .additional-properties {
-    margin-top: 10px;
-  }
-  
-  .additional-properties ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .additional-properties li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-  }
-  
-  .additional-properties i {
-    font-size: 16px;
-    margin-right: 10px;
-    color: #007bff;
-  }
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profile-description {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.contact-details {
+  margin-bottom: 10px;
+}
+
+.phone-number {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.response-time {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.additional-properties {
+  margin-top: 10px;
+}
+
+.additional-properties ul {
+  list-style: none;
+  padding: 0;
+}
+
+.additional-properties li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.additional-properties i {
+  font-size: 16px;
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title__text {
+  font-size: 56px;
+  font-weight: bold;
+  color: #000;
+}
+
+.title__sub-block {
+  display: flex;
+  gap: 16px;
+}
+
+.title__sub-value {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.title__sub-value:not(:last-child)::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 4px;
+  border-radius: 4px;
+  background-color: #000;
+}

@@ -9,6 +9,7 @@ import Description from "./component/description";
 import { Details } from "./component/details";
 import { Amenities } from "./component/amenities";
 import { ContactInfo } from "./component/profile";
+import Profile from "./component/profile";
 function App() {
   const data = {
     listing_name: "Іст-Сайд Біл",
@@ -184,7 +185,7 @@ function App() {
 
         <Amenities amenities={data.amenities}/>
 
-        <Profile  title="Господар – Kerthy" profile = {data.profile} />
+        <Profile title="Господар – Kerthy" profileImg = {data.profile.image} />
     </Page>
   );
 }
