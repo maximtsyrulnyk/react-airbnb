@@ -1,54 +1,34 @@
-import React, { useState } from 'react';
-import './App.css';
+import React from "react";
+import "./index.css";
+import Box from "../box";
+import Heading from "../heading";
+import ListItem from "../list-item";
 
-const PropertyDetails = () => {
-  const [amenities, setAmenities] = useState([
-    { id: 1, name: 'Басейн', checked: false },
-    { id: 2, name: 'Спортивний зал', checked: false },
-    { id: 3, name: 'Безкоштовний сніданок', checked: false },
-    { id: 4, name: 'Безкоштовний Wi-Fi', checked: true },
-    { id: 5, name: 'Безкоштовний вуличний паркінг', checked: false },
-    { id: 6, name: 'Дозволено розміщення з домашніми тваринами', checked: false },
-    { id: 7, name: 'Трансфер до/з аеропорту', checked: false },
-    { id: 8, name: 'Консьерж-сервіс', checked: false },
-    { id: 9, name: 'Обслуговування номерів', checked: false },
-    { id: 10, name: 'Підходить для дітей', checked: false },
-  ]);
+import poolLogo from "./svg/pool_logo.svg";
+import gymLogo from "./svg/gym_logo.svg";
+import breakfastLogo from "./svg/breakfast_logo.svg";
+import wifiLogo from "./svg/wi-fi_logo.svg";
+import parkingLogo from "./svg/parking_logo.svg";
+import petLogo from "./svg/pet_logo.svg";
+import transferLogo from "./svg/transfer_logo.svg";
+import conciergeServiceLogo from "./svg/concierge-service_logo.svg";
+import roomServiceLogo from "./svg/room_service_logo.svg";
+import suitableForChildrenLogo from "./svg/suitable_for_children_logo.svg";
 
-  const handleAmenityChange = (event) => {
-    const id = parseInt(event.target.id);
-    const checked = event.target.checked;
-    const updatedAmenities = amenities.map((amenity) => {
-      if (amenity.id === id) {
-        return { ...amenity, checked };
-      }
-      return amenity;
-    });
-    setAmenities(updatedAmenities);
-  };
-
+export const Amenities = ({pool, gym, breakfast, wifi, parking, pet, transfer, conciergeService, roomService, suitableForChildren}) => {
   return (
-    <div className="container">
-      <h1>Деталі властивості</h1>
-
-      <div className="details">
-        <div className="amenities">
-          <h2>Вигоди</h2>
-          {amenities.map((amenity) => (
-            <div className="amenity" key={amenity.id}>
-              <input
-                type="checkbox"
-                id={amenity.id}
-                checked={amenity.checked}
-                onChange={handleAmenityChange}
-              />
-              <label htmlFor={amenity.id}>{amenity.name}</label>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
+      <Box shadow classname="amenities">
+          <Heading border>Зручності:</Heading>
+          <ListItem imageSrc={poolLogo}>Басейн: {pool}</ListItem>
+          <ListItem imageSrc={gymLogo}>Спортивний зал: {gym}</ListItem>
+          <ListItem imageSrc={breakfastLogo}>Безкоштовний сніданок: {breakfast}</ListItem>
+          <ListItem imageSrc={wifiLogo}>Безкоштовний Wi-Fi: {wifi}</ListItem>
+          <ListItem imageSrc={parkingLogo}>Безкоштовний вуличний паркінг: {parking}</ListItem>
+          <ListItem imageSrc={petLogo}>Дозволено розміщення з домашніми тваринами: {pet}</ListItem>
+          <ListItem imageSrc={transferLogo}>Трансфер до/з аеропорту: {transfer}</ListItem>
+          <ListItem imageSrc={conciergeServiceLogo}>Консьєрж-сервіс: {conciergeService}</ListItem>
+          <ListItem imageSrc={roomServiceLogo}>Обслуговування номерів: {roomService}</ListItem>
+          <ListItem imageSrc={suitableForChildrenLogo}>Підходить для дітей: {suitableForChildren}</ListItem>
+      </Box>
   );
 };
-
-export default PropertyDetails;

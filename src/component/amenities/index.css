@@ -16,7 +16,7 @@ body {
     margin-bottom: 20px;
   }
   
-  .details {
+  .amenities {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
