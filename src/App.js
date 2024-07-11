@@ -10,6 +10,8 @@ import { Details } from "./component/details";
 import { Amenities } from "./component/amenities";
 import { ContactInfo } from "./component/profile";
 import Profile from "./component/profile";
+import Additional from "./component/additional";
+
 function App() {
   const data = {
     listing_name: "Іст-Сайд Біл",
@@ -182,10 +184,10 @@ function App() {
         <Details details={data.property_details}/>
 
         <Description title="Про сусідів" children={data.neighborhood_info} />
-
         <Amenities amenities={data.amenities}/>
-
-        <Profile title="Господар – Kerthy" profileImg = {data.profile.image} />
+        <Additional data={data.additional_properties}/>
+        <Review list={data.guestReviews} />
+        <Attractions list={data.nearbyAttractions} />
     </Page>
   );
 }
