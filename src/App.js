@@ -10,7 +10,7 @@ import { Details } from "./component/details";
 import { Amenities } from "./component/amenities";
 import { ContactInfo } from "./component/profile";
 import Profile from "./component/profile";
-import Additional from "./component/additional";
+import {Additional} from "./component/additional";
 
 function App() {
   const data = {
