@@ -11,6 +11,8 @@ import { Amenities } from "./component/amenities";
 import { ContactInfo } from "./component/profile";
 import Profile from "./component/profile";
 import {Additional} from "./component/additional";
+import Review from "./component/review";
+import Attractions from "./component/attractions";
 
 function App() {
   const data = {
