@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import Heading from '../heading';
 import ListItem from '../list-item';
 import './index.css';
+import Box from '../box';
 
 
 export default function Attractions ({list}) {
