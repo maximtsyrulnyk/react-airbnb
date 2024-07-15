@@ -1,0 +1,113 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .property-listing-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .property-listing-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .property-listing-price {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .property-listing-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .property-listing-details {
+    padding: 20px;
+  }
+  
+  .property-listing-description {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+   
+  .property-listing-amenities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .property-listing-amenity {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .property-listing-amenity i {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  /* Additional Properties */
+  
+  .property-listing-additional-properties {
+    padding: 20px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .property-listing-additional-properties-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .property-listing-additional-properties-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .property-listing-additional-properties-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .property-listing-additional-properties-item i {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  /* Contact Button */
+  
+  .property-listing-contact-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
