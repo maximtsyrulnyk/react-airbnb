@@ -1,4 +1,5 @@
 import "./index.css";
+import Box from "../box";
 
 export default function ListItem({children, imageSrc, title}) {
     return (

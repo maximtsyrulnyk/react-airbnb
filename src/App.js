@@ -14,6 +14,7 @@ import {Additional} from "./component/additional";
 import Review from "./component/review";
 import Attractions from "./component/attractions";
 
+
 function App() {
   const data = {
     listing_name: "Іст-Сайд Біл",
